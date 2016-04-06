@@ -24,7 +24,7 @@ Adventure allows you to see all your options in terms of fun activies, events, a
 * Required
 * Required
 
-### View
+** View **
 * Required
 * Required
 * Required
