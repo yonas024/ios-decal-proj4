@@ -19,7 +19,7 @@ Adventure allows you to see all your options in terms of fun activies, events, a
 
 ## Instructions 
 
-##### Model
+#### Model
 * Required
 * Required
 * Required
