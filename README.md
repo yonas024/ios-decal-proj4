@@ -24,16 +24,19 @@ Adventure allows you to see all your options in terms of fun activies, events, a
 ## Instructions 
 
 #### Model
-* Required
-* Required
-* Required
+* Activity.swift
+* Profile.swift
 
 #### View
-* Required
-* Required
-* Required
+* Sign in/login View
+* HomeView (View for the random activity, swipe left or right on activity, next one pops up)
+* ProfileView (View for your profile, contains name, age, photo, and list of activities/events your are interested in
+* ActivityView (View for when you tap on an activity, shows you the rating, location, cost (says FREE if no cost)
+* CategoryTableView (View of a specific type of activity/event)
+* PublicView (View for the public news feed, people able to message you if interested in event also
 
 #### Controller
-* Required
-* Required
-* Required
+* ProfileController.swift
+* HomeController.swift
+* CategoryController.swift
+* ActivityController.swift
