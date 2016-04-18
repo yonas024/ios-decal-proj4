@@ -5,9 +5,9 @@
 * Angus Hung
 
 ## Purpose 
-Adventure allows you to see all your options in terms of fun activies,
-events, and travel sites. Once you open the app, you will be able to browse
-through the app and see what lovely things there are to do in your area in an
+Adventure allows you to see all your options in terms of fun activies,  
+events, and travel sites. Once you open the app, you will be able to browse  
+through the app and see what lovely things there are to do in your area in an  
 instant! 
 
 ## Features
