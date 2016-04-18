@@ -61,5 +61,4 @@ able to message you if interested in event also
 * ProfileController.swift
 * HomeController.swift
 * CategoryController.swift
-*
-ActivityController.swift
+* ActivityController.swift
