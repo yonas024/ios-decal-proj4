@@ -12,8 +12,7 @@ instant!
 
 ## Features
 * Ability to adjust mile radius
-* Ability to tap on
-an event and send to a friend
+* Ability to tap on an event and send to a friend
 * Ability to suggest events based on weather/time
 of day/previous event choices
 * (Possibly an ability to create account/log in,
@@ -35,8 +34,7 @@ see/edit your profile
 * Option to click on "Public" button that allows you to
 post in a public feed where you can join strangers and do an activity
 
-##
-Instructions 
+## Instructions 
 
 #### Model
 * Activity.swift
@@ -48,7 +46,7 @@ Instructions
 right on activity, next one pops up)
 * ProfileView (View for your profile,
 contains name, age, photo, and list of activities/events your are interested
-in 
+in
 * ActivityView (View for when you tap on an activity, shows you the rating,
 location, cost (says FREE if no cost)
 * CategoryTableView (View of a specific
