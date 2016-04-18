@@ -4,8 +4,7 @@
 * Yonas Kbrom
 * Angus Hung
 
-##
-Purpose 
+## Purpose 
 Adventure allows you to see all your options in terms of fun activies,
 events, and travel sites. Once you open the app, you will be able to browse
 through the app and see what lovely things there are to do in your area in an
@@ -59,8 +58,7 @@ type of activity/event)
 able to message you if interested in event also
 
 #### Controller
-*
-ProfileController.swift
+* ProfileController.swift
 * HomeController.swift
 * CategoryController.swift
 *
