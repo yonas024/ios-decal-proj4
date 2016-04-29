@@ -47,7 +47,7 @@
                                 <rect key="frame" x="124" y="448" width="73" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="rQB-0W-A2e" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="xGF-YI-cvT"/>
+                                    <segue destination="rQB-0W-A2e" kind="modal" identifier="submit" id="afS-i3-reY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -353,7 +353,7 @@
                                 <color key="backgroundColor" red="0.93941591989999995" green="0.8907749841" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="rQB-0W-A2e" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="dj2-uA-qum"/>
+                                    <segue destination="rQB-0W-A2e" kind="modal" identifier="loggedIn" id="q6S-dE-JgD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAc-jA-NYL">
@@ -527,7 +527,7 @@
         <image name="profile.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xGF-YI-cvT"/>
+        <segue reference="afS-i3-reY"/>
         <segue reference="lHb-eV-YsH"/>
     </inferredMetricsTieBreakers>
 </document>
