@@ -45,6 +45,8 @@ class RegisterViewController: UIViewController {
                 return false
             }
             var p = Profile(first: firstName.text!, last: lastName.text!, email: email.text!, password: password1.text!, current: true)
+            dictionary![email.text!] = password1.text!
+            //dictionary["f"] = "dog"
             //dictionary.setValue(password1.text!, forKey: email.text!)
             profiles.append(p)
             return true

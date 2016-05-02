@@ -9,7 +9,6 @@
         <!--Register-->
         <scene sceneID="ZYW-e1-ZTa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2rQ-z4-bq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="e3D-1H-keP" customClass="RegisterViewController" customModule="Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0NH-nb-p4b"/>
@@ -89,6 +88,7 @@
                         <outlet property="password2" destination="Jxg-4x-xSd" id="wwo-Vj-1OI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rQ-z4-bq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="1819"/>
         </scene>
@@ -513,7 +513,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="lkq-pA-8zL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIv-Fn-fhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="rQB-0W-A2e" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nws-88-eH0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VY9-oZ-Yzk">
@@ -524,53 +523,48 @@
                     <connections>
                         <segue destination="No2-mR-A8x" kind="relationship" relationship="viewControllers" id="K3S-h9-ukk"/>
                         <segue destination="OFT-W4-Mmr" kind="relationship" relationship="viewControllers" id="qXm-j1-bgb"/>
-                        <segue destination="1rP-s2-FNP" kind="relationship" relationship="viewControllers" id="92d-9s-h7D"/>
+                        <segue destination="uaQ-rb-iR9" kind="relationship" relationship="viewControllers" id="W6s-cG-CiK"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIv-Fn-fhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363" y="1134"/>
         </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="JSP-yj-7Ng">
+        <!--Item-->
+        <scene sceneID="cid-kE-J70">
             <objects>
-                <viewController id="1rP-s2-FNP" customClass="SettingsViewController" customModule="Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uaQ-rb-iR9" customClass="SettingsViewController" customModule="Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K5k-UX-hPH"/>
-                        <viewControllerLayoutGuide type="bottom" id="keS-W6-2H4"/>
+                        <viewControllerLayoutGuide type="top" id="1nm-cx-jjp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8nQ-l8-E6P"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="J6v-iH-FMp">
+                    <view key="view" contentMode="scaleToFill" id="82w-a5-eC7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-2n-B2f">
-                                <rect key="frame" x="129" y="434" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h8-Vo-BNM">
+                                <rect key="frame" x="133" y="384" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <action selector="out:" destination="1rP-s2-FNP" eventType="touchUpInside" id="pfr-ns-bas"/>
+                                    <action selector="log:" destination="uaQ-rb-iR9" eventType="touchUpInside" id="GOF-e9-aqf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XZX-2n-B2f" secondAttribute="trailing" constant="112" id="2YF-P9-EKM"/>
-                            <constraint firstItem="XZX-2n-B2f" firstAttribute="leading" secondItem="J6v-iH-FMp" secondAttribute="leadingMargin" constant="113" id="a7x-Lb-xeI"/>
-                            <constraint firstItem="keS-W6-2H4" firstAttribute="top" secondItem="XZX-2n-B2f" secondAttribute="bottom" constant="55" id="rU6-qM-7SJ"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="VCq-FA-MR0"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="FJz-8A-K3I"/>
                     <connections>
-                        <segue destination="fRj-Y7-dqd" kind="unwind" identifier="unwindNow" unwindAction="prepareForUnwind:" id="o2F-cM-Ukl"/>
+                        <segue destination="rBx-RR-0Tf" kind="unwind" identifier="unwindNow" unwindAction="unwindBack:" id="eFB-Ud-wAv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hSq-2j-niP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="fRj-Y7-dqd" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDp-O0-max" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rBx-RR-0Tf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="863" y="1134"/>
+            <point key="canvasLocation" x="881" y="1134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EDF-bf-CZ3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1WF-Tk-z0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XKR-j1-NLy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sfZ-Xn-3Uz">
@@ -582,6 +576,7 @@
                         <segue destination="MiZ-tg-jw4" kind="relationship" relationship="rootViewController" id="aAS-0f-VUK"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WF-Tk-z0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-694" y="1129"/>
         </scene>

@@ -8,10 +8,12 @@
 
 import UIKit
 
-var dictionary: NSDictionary = ["shawnshawn@berkeley.edu": "imata", "yoogene@berkeley.edu": "imataalso"]
+ var dictionary: Dictionary<String, String>? = ["shawn@berkeley.edu":"imata"]
 
 class LoginViewController: UIViewController {
-
+    
+   
+    
     //var logins = Logins()
     
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -35,6 +37,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dictionary!["a"] = "j"
         logo.image = UIImage(named: "logo.png")
         
         let pulseAnimation = CABasicAnimation(keyPath: "opacity")
@@ -83,15 +86,17 @@ class LoginViewController: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         if identifier == "loggedIn" {
-            var e = email.text
-            var p = password.text
-            if dictionary.objectForKey(e!) != nil {
-                if dictionary.valueForKey(e!) as? String != p {
+            var e = email?.text
+            var p = password?.text
+            if dictionary![e!] != nil {
+                if dictionary![e!] != p {
                     return false
                 }
                 for i in profiles {
                     if i.email ==  e {
                         i.current = true
+                    } else {
+                        i.current = false
                     }
                 }
             } else {
@@ -108,6 +113,10 @@ class LoginViewController: UIViewController {
     func clearField(sender: AnyObject) {
         email.text = ""
         password.text = ""
+    }
+    
+    @IBAction func unwindBack(segue: UIStoryboardSegue) {
+        
     }
 
 

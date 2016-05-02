@@ -21,17 +21,8 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//    @IBAction func out(sender: AnyObject) {
-//        for i in profiles {
-//            if i.current == true {
-//                i.current = false
-//            }
-//        }
-//        self.performSegueWithIdentifier("unwindToInitial", sender: self)
-//    }
-    @IBAction func out(sender: AnyObject) {
+    
+    @IBAction func log(sender: AnyObject) {
         self.performSegueWithIdentifier("unwindNow", sender: self)
     }
-    
 }
