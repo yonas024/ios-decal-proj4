@@ -18,6 +18,8 @@ class MapViewController: UIViewController {
     
     var manager = CLLocationManager()
     
+    var nextEvent: Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
@@ -37,13 +39,6 @@ class MapViewController: UIViewController {
         let region = MKCoordinateRegionMake(UCBerkeley, span)
         map.setRegion(region, animated: true)
         
-        
-//        let marina = CLLocationCoordinate2DMake(37.86638406, -122.31057644);
-//        let marinaNote = MKPointAnnotation();
-//        marinaNote.coordinate = marina;
-//        marinaNote.title = "Berkeley Marina"
-//        marinaNote.subtitle = "Come check out the great view of the Golden Gate Bridge from the Berkeley Marina!"
-        
         var location = Locations()
         
         for i in destinations {
@@ -52,6 +47,19 @@ class MapViewController: UIViewController {
     
     }
     
+    
+    
+//    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        self.performSegueWithIdentifier("showImage", sender: self)
+//    }
+//    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showEvent" {
+            let s = segue.destinationViewController as! EventViewController
+            s.event = nextEvent
+            //print("hello")
+        }
+    }
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         
@@ -69,27 +77,27 @@ class MapViewController: UIViewController {
             pinView!.animatesDrop = true
         }
         
+        
         let button = UIButton(type: UIButtonType.DetailDisclosure)
+        //print("\(annotation.title)")
         
+        var event = Event(name: annotation.title as String!!, subtitle: annotation.subtitle as String!!, note: annotation as! MKPointAnnotation, coordinate: annotation.coordinate)
+        
+        events.append(event)
+        button.tag = events.count-1
+        button.addTarget(self, action: "doSomething:", forControlEvents: .TouchUpInside)
         pinView?.rightCalloutAccessoryView = button
-        
         return pinView
     }
     
-    
-//    func displayMarkers() -> Void
-//    {
-//
-//        let annotationView = MKAnnotationView()
-//        
-//        let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure)
-//        annotationView.rightCalloutAccessoryView = detailButton
-//
-//    }
-
-    
-    
-    
+    func doSomething(sender:UIButton) {
+        for i in events {
+            if i.name == events[sender.tag].name {
+                nextEvent = i
+                self.performSegueWithIdentifier("showEvent", sender: self)
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

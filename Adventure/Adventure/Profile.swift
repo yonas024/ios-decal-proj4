@@ -21,6 +21,8 @@ class Profile {
     var password: String!
     
     var current: Bool
+    
+    var myEvents = [Event]()
 
     init (first: String, last: String, email: String, password: String, current: Bool) {
         self.firstName = first

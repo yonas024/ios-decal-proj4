@@ -21,7 +21,9 @@
 		0F01EE881CD1EA84002EEAF2 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01EE871CD1EA84002EEAF2 /* profile.png */; };
 		0F1BA4B11CD1EFD700670CBE /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4B01CD1EFD700670CBE /* Locations.swift */; };
 		0F1BA4B61CD2881D00670CBE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4B51CD2881D00670CBE /* SWRevealViewController.m */; };
-		0F1BA4DF1CD2C52300670CBE /* ExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4DE1CD2C52300670CBE /* ExViewController.swift */; };
+		0F1BA4E31CD6925C00670CBE /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E21CD6925C00670CBE /* EventViewController.swift */; };
+		0F1BA4E51CD6946C00670CBE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E41CD6946C00670CBE /* Event.swift */; };
+		0F1BA4E71CD6D78F00670CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E61CD6D78F00670CBE /* SettingsViewController.swift */; };
 		0F9DF8FE1CCDB69D00DCC395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DF8FD1CCDB69D00DCC395 /* AppDelegate.swift */; };
 		0F9DF9001CCDB69D00DCC395 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DF8FF1CCDB69D00DCC395 /* LoginViewController.swift */; };
 		0F9DF9031CCDB69D00DCC395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9DF9011CCDB69D00DCC395 /* Main.storyboard */; };
@@ -47,7 +49,9 @@
 		0F1BA4B31CD2881D00670CBE /* Adventure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adventure-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F1BA4B41CD2881D00670CBE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0F1BA4B51CD2881D00670CBE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		0F1BA4DE1CD2C52300670CBE /* ExViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExViewController.swift; sourceTree = "<group>"; };
+		0F1BA4E21CD6925C00670CBE /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		0F1BA4E41CD6946C00670CBE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0F1BA4E61CD6D78F00670CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0F9DF8FA1CCDB69D00DCC395 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9DF8FD1CCDB69D00DCC395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9DF8FF1CCDB69D00DCC395 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				0F01EE811CD1D638002EEAF2 /* Profile.swift */,
 				0F1BA4B01CD1EFD700670CBE /* Locations.swift */,
+				0F1BA4E41CD6946C00670CBE /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -110,6 +115,8 @@
 				0F01EE6B1CD18382002EEAF2 /* RegisterViewController.swift */,
 				0F9DF90F1CD1611B00DCC395 /* MapViewController.swift */,
 				0F01EE831CD1E249002EEAF2 /* ProfileViewController.swift */,
+				0F1BA4E21CD6925C00670CBE /* EventViewController.swift */,
+				0F1BA4E61CD6D78F00670CBE /* SettingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -151,7 +158,6 @@
 				0F9DF8FD1CCDB69D00DCC395 /* AppDelegate.swift */,
 				0F9DF9041CCDB69D00DCC395 /* Assets.xcassets */,
 				0F9DF9091CCDB69D00DCC395 /* Info.plist */,
-				0F1BA4DE1CD2C52300670CBE /* ExViewController.swift */,
 			);
 			path = Adventure;
 			sourceTree = "<group>";
@@ -238,13 +244,15 @@
 			files = (
 				0F9DF9001CCDB69D00DCC395 /* LoginViewController.swift in Sources */,
 				0F01EE821CD1D638002EEAF2 /* Profile.swift in Sources */,
+				0F1BA4E71CD6D78F00670CBE /* SettingsViewController.swift in Sources */,
 				0F9DF9101CD1611B00DCC395 /* MapViewController.swift in Sources */,
 				0F1BA4B61CD2881D00670CBE /* SWRevealViewController.m in Sources */,
+				0F1BA4E51CD6946C00670CBE /* Event.swift in Sources */,
 				0F1BA4B11CD1EFD700670CBE /* Locations.swift in Sources */,
+				0F1BA4E31CD6925C00670CBE /* EventViewController.swift in Sources */,
 				0F01EE841CD1E249002EEAF2 /* ProfileViewController.swift in Sources */,
 				0F9DF8FE1CCDB69D00DCC395 /* AppDelegate.swift in Sources */,
 				0F01EE6C1CD18382002EEAF2 /* RegisterViewController.swift in Sources */,
-				0F1BA4DF1CD2C52300670CBE /* ExViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Adventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Adventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

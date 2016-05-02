@@ -36,6 +36,18 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         logo.image = UIImage(named: "logo.png")
+        
+        let pulseAnimation = CABasicAnimation(keyPath: "opacity")
+        pulseAnimation.duration = 1
+        pulseAnimation.fromValue = 0
+        pulseAnimation.toValue = 1
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = FLT_MAX
+        
+        logo.layer.addAnimation(pulseAnimation, forKey: nil)
+        
+        
         backgroundImage.image = images[index]
         animateImage()
     }
@@ -77,11 +89,25 @@ class LoginViewController: UIViewController {
                 if dictionary.valueForKey(e!) as? String != p {
                     return false
                 }
+                for i in profiles {
+                    if i.email ==  e {
+                        i.current = true
+                    }
+                }
             } else {
+                let alertController = UIAlertController(title: "Error", message:
+                    "Incorrect email and password combination, try again.", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: clearField))
+                self.presentViewController(alertController, animated: true, completion: nil)
                 return false
             }
         }
         return true
+    }
+    
+    func clearField(sender: AnyObject) {
+        email.text = ""
+        password.text = ""
     }
 
 

@@ -10,19 +10,26 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var first: UILabel!
+    @IBOutlet weak var last: UILabel!
+    @IBOutlet weak var email: UILabel!
+    
+    var profile = Profile(first: "", last: "", email: "", password: "", current: true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //dictionary.setValue("dog", forKey: "cat")
+        for i in profiles {
+            if i.current == true {
+                profile = i
+            }
+        }
         
-//        if self.revealViewController() != nil {
-//            menu.target = self.revealViewController()
-//            menu.action = "revealToggle:"
-//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        }
-        
-        
+        first.text = profile.firstName
+        last.text = profile.lastName
+        email.text = profile.email
+
     }
     
     override func didReceiveMemoryWarning() {
