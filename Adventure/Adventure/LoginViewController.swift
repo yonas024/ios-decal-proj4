@@ -31,17 +31,16 @@ class LoginViewController: UIViewController {
         UIImage(named: "city7.gif")!]
     
     var index = 0
-    let animationDuration: NSTimeInterval = 0.25
-    let switchingInterval: NSTimeInterval = 3
+    let animationDuration: NSTimeInterval = 0.5
+    let switchingInterval: NSTimeInterval = 4
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        dictionary!["a"] = "j"
         logo.image = UIImage(named: "logo.png")
         
         let pulseAnimation = CABasicAnimation(keyPath: "opacity")
-        pulseAnimation.duration = 1
+        pulseAnimation.duration = 5
         pulseAnimation.fromValue = 0
         pulseAnimation.toValue = 1
         pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)

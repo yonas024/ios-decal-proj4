@@ -24,5 +24,6 @@ class SettingsViewController: UIViewController {
     
     @IBAction func log(sender: AnyObject) {
         self.performSegueWithIdentifier("unwindNow", sender: self)
+        //pictures = []
     }
 }

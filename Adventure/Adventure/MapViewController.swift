@@ -26,12 +26,6 @@ class MapViewController: UIViewController {
 //        print(profiles.first?.firstName)
 //        print(profiles.first?.lastName)
         
-        if self.revealViewController() != nil {
-            menu.target = self.revealViewController()
-            menu.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         let UCBerkeley = CLLocationCoordinate2DMake(37.87170292, -122.26088047);

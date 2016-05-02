@@ -24,6 +24,12 @@
 		0F1BA4E31CD6925C00670CBE /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E21CD6925C00670CBE /* EventViewController.swift */; };
 		0F1BA4E51CD6946C00670CBE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E41CD6946C00670CBE /* Event.swift */; };
 		0F1BA4E71CD6D78F00670CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4E61CD6D78F00670CBE /* SettingsViewController.swift */; };
+		0F1BA4EB1CD7014F00670CBE /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BA4EA1CD7014F00670CBE /* iCarousel.m */; };
+		0F1BA4F11CD7032D00670CBE /* The Big C.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BA4EC1CD7032D00670CBE /* The Big C.gif */; };
+		0F1BA4F21CD7032D00670CBE /* Campanile.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BA4ED1CD7032D00670CBE /* Campanile.gif */; };
+		0F1BA4F31CD7032D00670CBE /* Cesar Chavez Park.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BA4EE1CD7032D00670CBE /* Cesar Chavez Park.gif */; };
+		0F1BA4F41CD7032D00670CBE /* Berkeley Marina.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BA4EF1CD7032D00670CBE /* Berkeley Marina.gif */; };
+		0F1BA4F51CD7032D00670CBE /* Memorial Glade.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BA4F01CD7032D00670CBE /* Memorial Glade.gif */; };
 		0F9DF8FE1CCDB69D00DCC395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DF8FD1CCDB69D00DCC395 /* AppDelegate.swift */; };
 		0F9DF9001CCDB69D00DCC395 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DF8FF1CCDB69D00DCC395 /* LoginViewController.swift */; };
 		0F9DF9031CCDB69D00DCC395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9DF9011CCDB69D00DCC395 /* Main.storyboard */; };
@@ -52,6 +58,13 @@
 		0F1BA4E21CD6925C00670CBE /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		0F1BA4E41CD6946C00670CBE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0F1BA4E61CD6D78F00670CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0F1BA4E91CD7014F00670CBE /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		0F1BA4EA1CD7014F00670CBE /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		0F1BA4EC1CD7032D00670CBE /* The Big C.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "The Big C.gif"; sourceTree = "<group>"; };
+		0F1BA4ED1CD7032D00670CBE /* Campanile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Campanile.gif; sourceTree = "<group>"; };
+		0F1BA4EE1CD7032D00670CBE /* Cesar Chavez Park.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Cesar Chavez Park.gif"; sourceTree = "<group>"; };
+		0F1BA4EF1CD7032D00670CBE /* Berkeley Marina.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Berkeley Marina.gif"; sourceTree = "<group>"; };
+		0F1BA4F01CD7032D00670CBE /* Memorial Glade.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Memorial Glade.gif"; sourceTree = "<group>"; };
 		0F9DF8FA1CCDB69D00DCC395 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9DF8FD1CCDB69D00DCC395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9DF8FF1CCDB69D00DCC395 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +98,11 @@
 				0F01EE771CD1C190002EEAF2 /* city8.gif */,
 				0F01EE7F1CD1D1EF002EEAF2 /* logo.png */,
 				0F01EE871CD1EA84002EEAF2 /* profile.png */,
+				0F1BA4EC1CD7032D00670CBE /* The Big C.gif */,
+				0F1BA4ED1CD7032D00670CBE /* Campanile.gif */,
+				0F1BA4EE1CD7032D00670CBE /* Cesar Chavez Park.gif */,
+				0F1BA4EF1CD7032D00670CBE /* Berkeley Marina.gif */,
+				0F1BA4F01CD7032D00670CBE /* Memorial Glade.gif */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -126,9 +144,18 @@
 			children = (
 				0F1BA4B41CD2881D00670CBE /* SWRevealViewController.h */,
 				0F1BA4B51CD2881D00670CBE /* SWRevealViewController.m */,
-				0F1BA4B31CD2881D00670CBE /* Adventure-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		0F1BA4E81CD7012E00670CBE /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				0F1BA4E91CD7014F00670CBE /* iCarousel.h */,
+				0F1BA4EA1CD7014F00670CBE /* iCarousel.m */,
+				0F1BA4B31CD2881D00670CBE /* Adventure-Bridging-Header.h */,
+			);
+			name = Carousel;
 			sourceTree = "<group>";
 		};
 		0F9DF8F11CCDB69D00DCC395 = {
@@ -151,6 +178,7 @@
 		0F9DF8FC1CCDB69D00DCC395 /* Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				0F1BA4E81CD7012E00670CBE /* Carousel */,
 				0F1BA4B21CD287B800670CBE /* SWRevealViewController */,
 				0F01EE6D1CD18893002EEAF2 /* Model */,
 				0F01EE6E1CD1889B002EEAF2 /* View */,
@@ -220,18 +248,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1BA4F51CD7032D00670CBE /* Memorial Glade.gif in Resources */,
 				0F01EE7A1CD1C190002EEAF2 /* city6.gif in Resources */,
 				0F9DF9081CCDB69D00DCC395 /* LaunchScreen.storyboard in Resources */,
+				0F1BA4F31CD7032D00670CBE /* Cesar Chavez Park.gif in Resources */,
 				0F01EE801CD1D1EF002EEAF2 /* logo.png in Resources */,
 				0F9DF9051CCDB69D00DCC395 /* Assets.xcassets in Resources */,
 				0F9DF9031CCDB69D00DCC395 /* Main.storyboard in Resources */,
+				0F1BA4F41CD7032D00670CBE /* Berkeley Marina.gif in Resources */,
 				0F01EE791CD1C190002EEAF2 /* city5.gif in Resources */,
 				0F01EE6A1CD18251002EEAF2 /* city3.gif in Resources */,
 				0F01EE881CD1EA84002EEAF2 /* profile.png in Resources */,
+				0F1BA4F11CD7032D00670CBE /* The Big C.gif in Resources */,
 				0F01EE7C1CD1C190002EEAF2 /* city8.gif in Resources */,
 				0F01EE781CD1C190002EEAF2 /* city4.gif in Resources */,
 				0F01EE691CD18251002EEAF2 /* city2.gif in Resources */,
 				0F01EE7B1CD1C190002EEAF2 /* city7.gif in Resources */,
+				0F1BA4F21CD7032D00670CBE /* Campanile.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +284,7 @@
 				0F1BA4B11CD1EFD700670CBE /* Locations.swift in Sources */,
 				0F1BA4E31CD6925C00670CBE /* EventViewController.swift in Sources */,
 				0F01EE841CD1E249002EEAF2 /* ProfileViewController.swift in Sources */,
+				0F1BA4EB1CD7014F00670CBE /* iCarousel.m in Sources */,
 				0F9DF8FE1CCDB69D00DCC395 /* AppDelegate.swift in Sources */,
 				0F01EE6C1CD18382002EEAF2 /* RegisterViewController.swift in Sources */,
 			);

@@ -16,6 +16,7 @@ class EventViewController: UIViewController {
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var subtitle: UITextView!
     @IBAction func addEvent(sender: AnyObject) {
+        //pictures.append(event!.name)
         var string = event!.name
         events.append(event!)
         let alertController = UIAlertController(title: "Success!", message:
